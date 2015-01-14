@@ -268,7 +268,7 @@ it, please enter the types and the actual numbers or codes.</hint>
          <repeatable>true</repeatable>
          <label>Autor</label>
          <input-type>name</input-type>
-         <hint>Informe o nome do autor do TCR</hint>
+         <hint>Informe o nome do autor do Trabalho de Conclusão de Residência</hint>
          <required></required>
        </field>
        
@@ -279,7 +279,7 @@ it, please enter the types and the actual numbers or codes.</hint>
          <repeatable>true</repeatable>
          <label>Orientador</label>
          <input-type>name</input-type>
-         <hint>Informe o nome do(s) orientador(es) do TCR</hint>
+         <hint>Informe o nome do(s) orientador(es) do Trabalho de Conclusão de Residência</hint>
          <required></required>
        </field>       
 
@@ -312,10 +312,8 @@ it, please enter the types and the actual numbers or codes.</hint>
          <repeatable>false</repeatable>
          <label>Data de defesa</label>
          <input-type>date</input-type>
-         <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't
-                        applicable.</hint>
-         <required>You must enter at least the year.</required>
+         <hint>Informar a data de defesa do Trabalho de Conclusão de Residência</hint>
+         <required>Você precisa informar ao menos o ano</required>
        </field>
 
        <field>
@@ -325,10 +323,8 @@ it, please enter the types and the actual numbers or codes.</hint>
          <repeatable>false</repeatable>
          <label>Data de submissão</label>
          <input-type>date</input-type>
-         <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't
-                        applicable.</hint>
-         <required>You must enter at least the year.</required>
+         <hint>Data em que o Trabalho foi enviado à biblioteca</hint>
+         <required></required>
        </field>
 
        <field>
