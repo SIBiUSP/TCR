@@ -384,6 +384,19 @@ it, please enter the types and the actual numbers or codes.</hint>
          <input-type>textarea</input-type>
          <hint></hint>
          <required></required>
+	 <dc-language>pt-BR</dc-language>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstract</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Abstract</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+	 <dc-language>en</dc-language>
        </field>
 
        <field>
@@ -657,6 +670,10 @@ it, please enter the types and the actual numbers or codes.</hint>
 <value-pairs value-pairs-name="tipoItem" dc-term="type">
 	<pair>
 		<displayed-value>Trabalho de Conclusão de Residência (TCR)</displayed-value>
+		<stored-value>thesis</stored-value>
+	</pair>
+        <pair>
+		<displayed-value>Trabalho de Conclusão de Curso (TCC)</displayed-value>
 		<stored-value>thesis</stored-value>
 	</pair>
 </value-pairs>	
