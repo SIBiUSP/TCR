@@ -32,8 +32,9 @@
 <%@ page import="org.dspace.browse.ItemCounter" %>
 <%@ page import="org.dspace.content.*" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.core.Utils" %>
 <%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
+<%@ page import="org.dspace.content.Metadatum" %>
 
 <%
     // Retrieve attributes
@@ -73,11 +74,12 @@
 %>
 
 <%@page import="org.dspace.app.webui.servlet.MyDSpaceServlet"%>
+
 <dspace:layout locbar="commLink" title="<%= name %>" feedData="<%= feedData %>">
 
 <%-- Location bar --%>
-<dspace:include page="/layout/location-bar.jsp" />
-
+<dspace:include page="/layout/location-bar.jsp" />            
+            
 <div class="row">
     <div class="col-md-8">
 <div class="well">
@@ -135,7 +137,7 @@
 %>
 			
 	</div>
-</div>            
+</div>         
          <div class="panel panel-primary">    
         <div id="recent-submissions-carousel" class="panel-heading carousel slide">
         <%-- Recently Submitted items --%>
@@ -414,5 +416,7 @@
 			</div>
 		</div>
     <% } %>
-</div></div>    
+</div></div>
+             
+   
 </dspace:layout>

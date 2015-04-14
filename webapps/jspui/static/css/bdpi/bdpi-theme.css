@@ -42,6 +42,7 @@ audio:not([controls]) {
 template {
   display: none;
 }
+/*
 a {
   background: transparent;
 }
@@ -49,6 +50,7 @@ a {
 a:hover {
   outline: 0;
 }
+*/
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -1484,6 +1486,7 @@ table th[class*="col-"] {
   display: table-cell;
   float: none;
 }
+/*
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
 .table > tfoot > tr > td.active,
@@ -1504,6 +1507,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.active:hover > th {
   background-color: #e8e8e8;
 }
+*/
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
 .table > tfoot > tr > td.success,
@@ -2047,18 +2051,16 @@ fieldset[disabled] .btn {
 }
 .btn-default:hover,
 .btn-default:focus,
-.btn-default:active,
-.btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
-.btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   background-image: none;
 }
+/*
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
@@ -2077,6 +2079,7 @@ fieldset[disabled] .btn-default.active {
   background-color: #fff;
   border-color: #ccc;
 }
+*/
 .btn-default .badge {
   color: #fff;
   background-color: #333;
@@ -5979,4 +5982,11 @@ padding-right:0px;
 	width:70px;
 	position:relative;
 
+}
+
+/* Tabela sem bordas */ 
+
+.table-borderless td,
+.table-borderless th {
+    border: 0;
 }
