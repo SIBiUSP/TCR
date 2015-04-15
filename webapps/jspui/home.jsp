@@ -225,6 +225,55 @@
         <div class="panel-heading">
             <h3><fmt:message key="jsp.home.com1"/></h3>
         </div>
+         
+        
+        
+        
+
+    <%
+    if (communities != null && communities.length != 0)
+    {
+    %>
+    
+ 		
+            <div class="panel">
+
+                <div class="panel-body">
+            <%
+                    boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
+                for (int i = 0; i < communities.length; i++)
+                {
+            %>
+                <%  
+                                Bitstream logo = communities[i].getLogo();
+                                if (showLogos && logo != null) { %>
+                <div class="spamimage inline"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" title="<%= communities[i].getMetadata("name") %>" /> <span class="spantext badge"><%= ic.getCount(communities[i]) %></span></a></div>
+               
+                    <% } else { %>
+                 
+                        		
+                        <div class="spamimage inline"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %><span class="badge pull-right"><%= ic.getCount(communities[i]) %></span></a></div>
+                        <% }  %>
+                      
+                    
+                                          
+                <%
+                    }
+                %>
+            
+        
+        <%
+        }
+        %>
+
+
+        </div>
+    </div></div>
+        
+        
+<%--   
+        
+        
         <div class="row tooltip-demo table-responsive">
             <table class="table-borderless table-condensed">
                 <tr>
@@ -293,8 +342,8 @@
                 <!-- <th><a href="handle/BDPI/1370"><img class="img-responsive" src="image/logosusp/sibi.jpg" title="Sistema Integrado de Bibliotecas - SIBi"></a></th> -->
                 </tr>
             </table>
-        </div>
-    </div>
+        </div> --%>
+   
     <div class="panel">
         <div class="panel-body pull-center">
             <div class="addthis_toolbox addthis_default_style addthis_32x32_style" style="width:350px;height:70px">

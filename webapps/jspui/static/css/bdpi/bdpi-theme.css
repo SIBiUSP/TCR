@@ -5988,5 +5988,20 @@ padding-right:0px;
 
 .table-borderless td,
 .table-borderless th {
-    border: 0;
+   border: 0;
+}
+
+.spamimage {
+    position:relative;   
+}
+
+.spantext { 
+   position: relative; 
+   left: 35px;
+   top:-60px;
+}
+
+.inline {
+    display: inline-block;
+    float:center;
 }

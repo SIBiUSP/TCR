@@ -111,7 +111,7 @@
             out.println("</ul>"); 
         }
         out.println("</div>");
-        out.println("</li>");
+        out.println("</li><br/><br/>");
     }
 %>
 
