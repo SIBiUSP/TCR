@@ -100,7 +100,7 @@
 
             </ul>
         </li>
-        <li><a data-toggle="modal" data-target="#faq">FAQ</a></li> <!-- substitui o marcador <fmt:message key="jsp.layout.navbar-default.help"/> pelo FAQ -->
+        <!-- <li><a data-toggle="modal" data-target="#faq">FAQ</a></li>  substitui o marcador <fmt:message key="jsp.layout.navbar-default.help"/> pelo FAQ -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -124,10 +124,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.sign"/> <b class="caret"></b></a>
                 <% }%>             
             <ul class="dropdown-menu">
-                <li><a data-toggle="modal" data-target="#openAccessPolicy" style="cursor:pointer"><fmt:message key="usp.menu.openaccesspolicy"/></a></li>
-                <li><a data-toggle="modal" data-target="#politicaDePrivacidade" style="cursor:pointer"><fmt:message key="usp.menu.privacypolicy"/></a></li>
                 <li><a data-toggle="modal" data-target="#direitosAutorais" style="cursor:pointer"><fmt:message key="usp.menu.rights"/></a></li>
-                <li><a data-toggle="modal" data-target="#faq" style="cursor:pointer"><fmt:message key="usp.menu.faq"/></a></li>
                 <li><a data-toggle="modal" data-target="#creditos" style="cursor:pointer"><fmt:message key="usp.menu.creditos"/></a></li>
                 <li><a href="<%= request.getContextPath()%>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a></li>
                 <li class="divider"></li>
