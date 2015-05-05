@@ -114,7 +114,7 @@
             <meta property="og:image" content="<%= imageFacebook%>" />
             <meta property="og:site_name" content="<%= siteName%>"/>
             <meta property="og:url" content=<%= siteURL%>${requestScope['javax.servlet.forward.request_uri']} />
-            <meta property="og:description" content="Acesse este artigo na BDPI USP" />
+            <meta property="og:description" content="Acesse este trabalho na BDTA USP" />
             <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
             <!--[if lt IE 9]>
               <script src="<%= request.getContextPath()%>/static/js/html5shiv.js"></script>
